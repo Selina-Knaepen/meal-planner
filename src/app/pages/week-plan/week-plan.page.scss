@@ -1,0 +1,14 @@
+.item {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    border-bottom: 1px solid gray;
+
+    &__day {
+        font-weight: bold;
+    }
+
+    &__meal {
+        margin-left: 10px;
+    }
+}

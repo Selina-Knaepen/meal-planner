@@ -12,6 +12,8 @@
       <ion-title size="large">Week Plan</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Week plan page"></app-explore-container>
+  <div *ngFor="let day of plan" class="item">
+    <div class="item__day">{{ day.day }}</div>
+    <app-meal-item [meal]="day.meal"></app-meal-item>
+  </div>
 </ion-content>

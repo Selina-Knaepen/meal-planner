@@ -1,9 +1,10 @@
-import { WeekDay } from "@angular/common";
+
 import { Ingredient } from "./ingredient";
+import { WeekDays } from "./week-days";
 
 export interface Meal {
     name: string;
     ingredients: Array<Ingredient>;
     portionSize: number;
-    possibleDays: Array<WeekDay>;
+    impossibleDays: Array<WeekDays>;
 }

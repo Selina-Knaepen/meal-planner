@@ -1,7 +1,7 @@
-import { WeekDay } from "@angular/common";
 import { Meal } from "./meal";
+import { WeekDays } from "./week-days";
 
 export interface DayPlan {
-    day: WeekDay;
+    day: WeekDays;
     meal: Meal;
 }
