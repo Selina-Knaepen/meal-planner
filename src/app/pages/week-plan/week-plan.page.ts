@@ -18,7 +18,13 @@ export class WeekPlanPage implements OnInit {
         day: WeekDays.Monday,
         meal: {
           name: 'Food 1',
-          ingredients: [],
+          ingredients: [
+            {
+              name: 'Milk',
+              amount: 1,
+              unit: 'litre'
+            }
+          ],
           portionSize: 2,
           impossibleDays: []
         }

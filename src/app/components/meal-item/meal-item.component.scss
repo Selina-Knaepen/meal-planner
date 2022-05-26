@@ -1,0 +1,12 @@
+.meal {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-left: auto
+    }
+}
+
+.ingredient {
+    font-style: italic;
+}

@@ -8,9 +8,13 @@ import { Meal } from 'src/app/models/meal';
 })
 export class MealItemComponent implements OnInit {
   @Input() meal: Meal;
+  isCollapsed = false;
 
   constructor() { }
 
   ngOnInit() {}
 
+  changeIsCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
