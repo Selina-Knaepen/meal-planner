@@ -18,7 +18,7 @@
     padding: 20px;
     display: grid;
     grid-template-columns: 100px auto;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--ion-color-medium);
 
     &__day {
         font-weight: bold;
@@ -28,4 +28,13 @@
     &__meal {
         margin-left: 10px;
     }
+}
+
+.generate {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 40px;
 }
