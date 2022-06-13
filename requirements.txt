@@ -1,0 +1,43 @@
+= Models
+
+type Meal {
+ name: String
+ ingredients: [Ingredient]
+ portionSize: int
+ impossibleDays: [WeekDay]
+}
+
+type Ingredient {
+ name: String
+ unit: String
+ amount: float
+}
+
+type DayPlan {
+ meal: Meal
+ day: WeekDay
+}
+
+type ShoppingList {
+ id: int
+ present: [Ingredient]
+ needed: [Ingredient]
+}
+
+enum WeekDay {
+ monday, tuesday, …
+}
+
+= Loading
+
+* get list of day plans for current week
+* get list of all meals
+* get shopping list
+* autocomplete ingredient
+
+= Storing
+
+* add meal
+* edit meal
+* generate
+* check/uncheck ingredient
